@@ -16,6 +16,8 @@ def end_game
   puts "Goodbye!"
 end 
 
+#This is the functional code I wrote that doesn't pass tests
+
 def are_you_right(number)
   prompt_user 
   user_guess = get_user_input
@@ -30,15 +32,7 @@ end
 
 def run_guessing_game
 random_number = generate_number
-prompt_user 
-  user_guess = get_user_input
-  if user_guess == "#{number}"
-    puts "You guessed the correct number!"
-    elsif user_guess == "exit"
-    end_game 
-  else 
-    puts "Sorry! The computer guessed #{number}."
-  end
+are_you_right(random_number)
 end
 
 
