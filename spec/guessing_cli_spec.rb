@@ -1,3 +1,4 @@
+#require binding.pry 
 require_relative 'spec_helper'
 
 describe "Guessing CLI" do
